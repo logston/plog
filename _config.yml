@@ -1,9 +1,7 @@
 # Site settings
 title: plog
-email: code@logston.me
-description: > # this means to ignore newlines until the next unindent
-  plog is a blog by Paul Logston. Code, biology, 
-  etc. Hope you enjoy :)
+description: > # this means to ignore newlines until the next unindent 
+  Code, biology, etc. Hope you enjoy :)
 
 url: "http://plog.logston.me" # the base hostname & protocol for your site
 twitter_username: paullogston
