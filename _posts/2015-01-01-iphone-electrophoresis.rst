@@ -16,40 +16,43 @@ to make my own.
 Methods
 -------
 
-I had all the supplies I needed.
+I had all the supplies I needed:
 
     - 1 iPhone 5C case.
     - 1 piece of crumpled tin foil
-    - 1 black berry.
+    - 1 blackberry.
     - 1 bottle of Malbec
     - a few hours of free time.
 
 I used my girlfriend's iPhone 5C case as the chamber. 
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2557.jpg
-    :alt: Chamber construction from iPhone case
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2557.jpg
     :width: 800px
+
+    Chamber construction from iPhone case
 
 I used the top of the case to build a comb. 
-(Note: cutting Apple plastic is quite difficult. Yet another 
-props to Apple on their packaging. Not only is their packaging elegant and 
+(Note: Cutting Apple plastic is quite difficult. Yet another 
+prop to Apple on their packaging. Not only is their packaging elegant and 
 precise, it is structurally integrous). 
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2558.jpg
-    :alt: Making the comb.
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2558.jpg
     :width: 800px
+
+    Making the comb
 
 I used baking soda and distilled H2O for my buffer. Two grams of baking soda
 was added to 200ml of distilled water.
 
 I had agar around for making petri dishes so I added 1 gram of agar to 
-100ml of my buffer. (Possible problem #1: since I used nutrient agar, 
+100ml of my buffer. (Possible problem #1: Since I used nutrient agar, 
 the nutrients in the agar may have
 interfered with the movement of the compounds within the samples used.)
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2560.jpg
-    :alt: Agar 
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2560.jpg
     :width: 400px
+
+    Agar
 
 The instructions_ for building a gel electrophoresis chamber that I followed
 said to heat the agar solution in the microwave. However, I didn't care to
@@ -58,9 +61,10 @@ solution*.
 
 .. _instructions: http://www.sciencebuddies.org/science-fair-projects/project_ideas/BioChem_p028.shtml#procedure
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2562.jpg
-    :alt: Agar overflow in microwave
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2562.jpg
     :width: 400px
+
+    Agar overflow in microwave
 
 I'm very satisfied with the decision I made. 
 
@@ -68,9 +72,10 @@ I poured the hot agar/buffer solution into my electroded (ie. Aluminium foil
 wrapped on each side of the iphone case) electrophoresis chamber. I plopped my
 comb into the chamber and let it sit for 30 minutes. 
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2564.jpg
-    :alt: Electrophoresis chamber with liquid agar solution.
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2564.jpg
     :width: 800px
+
+    Electrophoresis chamber with liquid agar solution
 
 After 30 minutes, 
 I pulled out the comb, and I let the chamber sit for an hour while I went to 
@@ -86,41 +91,46 @@ and Well 4 with the juice from a blackberry I squished. (Problem #2: These
 samples were probably not the best to use for seeing results 
 of gel electrophoresis with the naked eye.)
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2566.jpg
-    :alt: Revo lution Malbec 
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2566.jpg
     :height: 400px
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2567.jpg
-    :alt: Electrophoresis chamber with liquid sample weight boats.
+    Revo lution Malbec 
+
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2567.jpg
     :width: 800px
 
+    Electrophoresis chamber with liquid sample weight boats
+
 (Possible problem #3: I didn't let the buffer go into the well first. 
-Maybs that lack of buffer in between the sample and the gel significantly 
-cuts down on the conduction between the two)
+Maybe that lack of buffer in between the sample and the gel significantly 
+cuts down on the conduction between the two.)
 
 I took a measurement of the resistance across (length-wise) the chamber 
-and agar. I measured 8k ohms of resistance across 10cm of agar. Then I poured
+and agar. I measured 8 kohms of resistance across 10cm of agar. Then I poured
 in 25 ml of buffer to submerge the gel. 
 
     After I added the buffer, I got some
     weird numbers for the resistance across the chamber. 
-    The resistance started out at about 160 k ohms and kept climbing. 
-    Know that I am thinking about it, those numbers make some sense. 
+    The resistance started out at about 160 kohms and kept climbing. 
+    Now that I am thinking about it, those numbers make some sense. 
     The buffer may have been corroding the 
     multi-meter probes and this corrosion caused them to build up a 
-    layer of tarnish that kept them from conducting. Maybe the bubbles from the
-    corrosion were preventing good conduction. 
+    layer of tarnish that kept them from conducting. Or 
+    maybe the bubbles from the
+    corrosion were preventing good conduction between the probes and the 
+    buffer.
 
 Then I hooked up an alligator clip to each electrode and took a 
 final measurement of resistance. I measured 15.05 kohms across the
-alligator clips and chamber; much better (or at least consistent)!
+alligator clips and chamber; much better (or at least consistent) number!
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2568.jpg
-    :alt: Electrophoresis chamber ready for run. 
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2568.jpg
     :width: 400px
 
+    Electrophoresis chamber ready for run
+
 A voltage of 12 VDC was applied on either end of the chamber. (Problem #4:
-This amount of voltage is nowhere near the amount that I would have liked
+This amount of voltage is nowhere near the amount that I would have liked to
 apply. 100 VDC would have been my choice but I didn't have the supplies to 
 apply that amount of voltage safely)
 
@@ -128,7 +138,7 @@ To kill time until the ball dropped, we started to watch the movie Melancolia.
 Gorgeous visuals, but a friend I was with wasn't into the movie so we 
 bailed on it and started Frequencies (Netflix baby).
 
-    Side Thought after watching Frequencies:
+    Side thought after watching Frequencies:
     
     If a machine can discover that it can control itself, does that 
     make it any less a machine? If a machine discovers that it can 
@@ -143,61 +153,71 @@ Results
 
 After the movie, it looked like there was very little movement. 
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2570.jpg
-    :alt: Electrophoresis chamber after 2 hours and 35 minutes. 
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2570.jpg
     :width: 800px
 
+    Electrophoresis chamber after 2 hours and 35 minutes
+
 From the picture above, it appears that the blackberry squish moved the 
-farthest. Of course, there is the extremely likely possibility that the
-compounds in the other samples traveled farther but were not visible to the 
-naked eye without some sort of stain. Since I didn't have the stains and
+farthest, having moved about 1cm towards the cathode. 
+Of course, there is the likely possibility that the
+compounds in the other samples traveled farther but were not visible. Many
+compounds required a stain to be seen with the naked eye.
+Since I didn't have any stains or
 UV lights to check that possibility, blackberry squish won this race by 1cm. 
 
-If you look closely at the image above, you can see that the gel was beginning
-to pull away from the right side electrode. 
+If you look closely at t.. figure above, you can see that the gel was beginning
+to pull away from the cathode.
 
 Just to see what would happen (ie. the motivation for this entire project), 
 I let the gel run overnight. Nine hours later the gel looked quite different. 
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2571.jpg
-    :alt: Electrophoresis chamber after 13 hours.
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2571.jpg
     :width: 800px
+
+    Electrophoresis chamber after 13 hours
 
 The samples were hardly visible. I attribute this lack of visibility 
 to diffusion of the samples into the buffer more than anything else. 
 What was most impressive was the severe corrosion of the Aluminium foil and
-the pulling away of the gel from the right side electrode. I assume that the 
-pulling away of the gel from the electrode was due to the 
+the pulling away of the gel from the cathode. I assume that the 
+pulling away of the gel from the cathode was due to the 
 bubbling from the reaction of the Aluminum foil with the buffer under 
 a potential gradient.
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2577.jpg
-    :alt: Aluminum foil corrosion.
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2577.jpg
     :width: 800px
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_2572.jpg
-    :alt: Gel pulling away from electrode. 
+    Aluminum foil corrosion
+
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_2572.jpg
     :width: 800px
+
+    Gel pulling away from electrode
 
 Before I threw away the gel, I decided to look at the areas around the wells
 a bit more closely. I chopped up a few pieces of the gel and put them under the
 microscope. Here are the results. 
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_0742.jpg
-    :alt: Control - squished agar.
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_0742.jpg
     :width: 800px
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_0747_48_merge.jpg
-    :alt: Piece of blackberry?
+    Control - squished agar.
+
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_0747_48_merge.jpg
     :width: 800px
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_0755.jpg
-    :alt: Broken plates of agar.
+    Piece of blackberry?
+
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_0755.jpg
     :width: 800px
 
-.. image:: /media/2015-01-01-iphone-electrophoresis/IMG_0761.jpg
-    :alt: Corroded Aluminum foil / A upside down seahorse playing a recorder
+    Broken plates of agar
+
+.. figure:: /media/2015-01-01-iphone-electrophoresis/IMG_0761.jpg
     :width: 800px
+
+    Corroded Aluminum foil / An upside down seahorse playing a recorder
 
 Conclusion
 ----------

@@ -204,3 +204,22 @@ pre {
         }
     }
 }
+
+
+/**
+ * Figure Captions (Added by Paul 2015-01-01)
+ */
+div.figure {
+  display: inline-block;
+  margin: 0 auto;
+
+  > p.caption {
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #eee;
+    
+  }
+}
