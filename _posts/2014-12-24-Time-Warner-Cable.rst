@@ -11,9 +11,9 @@ Motivation
 I love the internet. Unfortunately, my ISP doesn't always deliver. I am a 
 customer with Time Warner Cable and I have, on occasion, found that latency is
 super high or that I don't have a connection at all. These occurrences are not
-frequent enough to call the Time Warner about but they are annoying. 
-For the record, I would considered switching ISPs, but I don't have any other options. 
-Time Warner is the only ISP where I live.
+frequent enough to call Time Warner about but they are annoying. 
+For the record, I would consider switching ISPs, but I don't have any other options. 
+Time Warner is the only ISP available where I live.
 
 In order to empower myself a bit, I decided to take measurements of my
 ping time for a month and determine how bad my situation is. Maybe my 
@@ -37,16 +37,22 @@ The software loaded onto the Arduino can be downloaded by clicking
 Analysis and Results
 ====================
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     import numpy as np
     import pandas as pd
     import datetime
+ 
 .. code:: python
+    :class: ipynb-cell
 
     df_raw = pd.io.parsers.read_csv('data.csv')
     df_raw.columns=['timestamp', 'ping']
+ 
 .. code:: python
+    :class: ipynb-cell
 
     def isnotint(val):
         try:
@@ -54,11 +60,15 @@ Analysis and Results
             return False
         except:
             return True
+ 
 .. code:: python
+    :class: ipynb-cell
 
     # Probably a better way to do this. Would love to know.
     timeout_indices = df_raw['ping'].map(isnotint)  
+ 
 .. code:: python
+    :class: ipynb-cell
 
     df_clean = df_raw.copy(deep=True)
     df_clean.loc[timeout_indices, 'ping'] = 0
@@ -66,20 +76,26 @@ Analysis and Results
     df_clean['ping']= df_clean['ping'].map(int) # Probably a better way to do this.
     df_clean.dtypes
 
+ 
 .. parsed-literal::
+    :class: ipynb-literal
 
     timestamp    datetime64[ns]
     ping                  int64
     dtype: object
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     df_timeouts = df_raw.copy(deep=True)
     df_timeouts.loc[np.invert(timeout_indices), 'ping'] = 0
     # Make timeout pings equal size and 25% longer than the longest ping time recorded.
     df_timeouts.loc[timeout_indices, 'ping'] = df_clean['ping'].max() * 1.25
     df_timeouts['timestamp'] = df_timeouts['timestamp'].map(datetime.datetime.fromtimestamp)
+ 
 .. code:: python
+    :class: ipynb-cell
 
     # enable plotting in the current notebook with the inline backend
     %matplotlib inline
@@ -90,7 +106,9 @@ Analysis and Results
     pd.set_option('display.mpl_style', 'default')  # give plots a more pleasing visual style
     
     mpl.rcParams['figure.figsize'] = (15, 10) # Set default figure size
+ 
 .. code:: python
+    :class: ipynb-cell
 
     fig, ax = plt.subplots(1, 1)
     ax.set_xlabel('Date/Time')
@@ -100,7 +118,9 @@ Analysis and Results
 
 
 
+ 
 .. parsed-literal::
+    :class: ipynb-literal
 
     <matplotlib.axes._subplots.AxesSubplot at 0x111cb2588>
 
@@ -110,12 +130,12 @@ Analysis and Results
 .. image:: /media/2014-12-24-Time-Warner-Cable/ping-test_7_1.png
 
 
-Wow! That's a lot of pink! Were the timeouts that evenly dispersed? I
-know there were quite a number of them. Approximately 12% of packets
+Wow! That's a lot of pink! Were the timeouts that evenly dispersed? And I
+know there were quite a number of them, but that many? Approximately 12% of packets
 were dropped (ie. timed out). Lets thin out the data a bit to see the
 distribution of timeouts.
 
-Also to note, there seems to be some periodicity to the increases in
+Also to note, there seems to be some periodicity to the spikes in
 ping durations.
 
 Plausible causes:
@@ -124,7 +144,9 @@ Plausible causes:
 -  error in my aurduino sketch
 -  Giant Rat chewing on telecom cable
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     fig, ax = plt.subplots(1, 1)
     ax.set_xlabel('Date/Time')
@@ -135,7 +157,9 @@ Plausible causes:
 .. image:: /media/2014-12-24-Time-Warner-Cable/ping-test_9_1.png
 
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     number_of_timeouts = timeout_indices.sum()
     
@@ -146,16 +170,22 @@ Plausible causes:
                                                       len(df_raw),
                                                       timeout_percentage))
 
+ 
 .. parsed-literal::
+    :class: ipynb-literal
 
     99525 out of 809771 requests timed out. 12.29% of all requests timed out.
 
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     pings = df_clean.ping[~timeout_indices]
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     fig, ax = plt.subplots(1, 1)
     ax.set_xlabel('Ping (ms)')
@@ -164,7 +194,9 @@ Plausible causes:
 
 
 
+ 
 .. parsed-literal::
+    :class: ipynb-literal
 
     <matplotlib.axes._subplots.AxesSubplot at 0x12ba0aef0>
 
@@ -174,36 +206,50 @@ Plausible causes:
 .. image:: /media/2014-12-24-Time-Warner-Cable/ping-test_12_1.png
 
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     print('{:.2%} of pings were over 100 ms.'.format(len(pings[pings > 100]) / len(pings)))
 
+ 
 .. parsed-literal::
+    :class: ipynb-literal
 
     1.27% of pings were over 100 ms.
 
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     print('The average ping was {:.0f} ms.'.format(pings.mean()))
 
+ 
 .. parsed-literal::
+    :class: ipynb-literal
 
     The average ping was 35 ms.
 
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     ok_pings = pings[pings <= 100]
     print('From the set of pings that were less than 100 ms, '
           'the average ping was {:.0f} ms.'.format(ok_pings.mean()))
 
+ 
 .. parsed-literal::
+    :class: ipynb-literal
 
     From the set of pings that were less than 100 ms, the average ping was 32 ms.
 
 
+ 
 .. code:: python
+    :class: ipynb-cell
 
     fig, ax = plt.subplots(1, 1)
     ax.set_xlabel('Ping (ms)')
@@ -212,7 +258,9 @@ Plausible causes:
 
 
 
+ 
 .. parsed-literal::
+    :class: ipynb-literal
 
     <matplotlib.axes._subplots.AxesSubplot at 0x117cd96a0>
 
@@ -222,11 +270,10 @@ Plausible causes:
 .. image:: /media/2014-12-24-Time-Warner-Cable/ping-test_16_1.png
 
 
-Interesting to note, there seems to be ping durations that are not
+Interestingly, there seem to be ping durations that are not
 represented by any successful requests. For example, there were no
 successful pings with a duration of 20 milliseconds. That just seems
-wrong. I feel this data is inaccurate. Not sure how much I can trust
-this data. I will rerun the experiment.
+wrong. Not sure how much I can trust
+this data. I will rerun the experiment and report back. 
 
-Discussion
-==========
+To be continued...
