@@ -1,0 +1,59 @@
+---
+layout: post
+title: Commit Tagging vs. Time
+date: 2015-05-25 13:45:00
+categories: code git mercurial time tag
+---
+
+Introduction
+------------
+
+I've released a number of Python packages over the past few months and I've
+been curious about how I should version them. I decided to write a new 
+package plottags_ that I could use to plot the tag history for a repository 
+with respect to time. Here are a few of the plots I've created with 
+plottags_.
+
+.. _plottags: https://pypi.python.org/pypi/plottags
+
+
+.. figure:: /media/2015-05-25-Time-Tag/cpython.png
+    :width: 800px
+
+    Tagging History for CPython
+
+.. figure:: /media/2015-05-25-Time-Tag/ansible.png
+    :width: 800px
+
+    Tagging History for Ansible
+
+.. figure:: /media/2015-05-25-Time-Tag/django.png
+    :width: 800px
+
+    Tagging History for Django
+
+.. figure:: /media/2015-05-25-Time-Tag/django-compressor.png
+    :width: 800px
+
+    Tagging History for django-compressor
+
+.. figure:: /media/2015-05-25-Time-Tag/gunicorn.png
+    :width: 800px
+
+    Tagging History for Gunicorn
+
+.. figure:: /media/2015-05-25-Time-Tag/nginx.png
+    :width: 800px
+
+    Tagging History for Nginx
+
+Discussion
+----------
+
+I think the most interesting graph is Ansible's. The Ansible project
+has an incredibly steady tagging practice. I immediately assume that 
+this stability is due to the fact that Ansible has a number of incentives to 
+release steadily. Ansible is, after all, a product people pay for. After
+seeing Nginx's graph, I'm pretty confident that we'd see some similarly 
+steady trends in other psuedo-commercial packages.
+
