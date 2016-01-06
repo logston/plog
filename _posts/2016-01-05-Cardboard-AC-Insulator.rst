@@ -79,7 +79,7 @@ The data can be downloaded
 +---------------+-------------+--------------------+--------------------+
 
 
-Welch’s t-test was used to compute the t-statistic.
+Welch's t-test was used to compute the t-statistic.
 
 
 Discussion
