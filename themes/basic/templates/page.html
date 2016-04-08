@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block subtitle %} &middot; {{ page.title }}{% endblock %}
+
+{% block content %}
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <article class="post-content">
+    {{ page.content }}
+  </article>
+
+  {% if page.modified %}
+    <p>
+      Last updated: {{ page.locale_modified }}
+    </p>
+  {% endif %}
+</div>
+{% endblock %}
+
