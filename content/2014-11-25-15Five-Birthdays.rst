@@ -43,8 +43,11 @@ some really sweet photos.
     :alt: 3 Line - Just past fulton stop on car 1614. After walking through doors 11 & 12, 330 degree sweep. August 29th, 2014 @ 10:45pm, first vertical middle pole on left. About 4-6 feet from floor.
 
 .. image:: /legacy/2014-11-25-15Five-Birthdays/IMG_0717.jpg
+    :alt: Flow 1
 
 .. image:: /legacy/2014-11-25-15Five-Birthdays/IMG_0721.jpg
+    :alt: Flow 2
 
 .. image:: /legacy/2014-11-25-15Five-Birthdays/IMG_0732.jpg
+    :alt: Flow 3
 
